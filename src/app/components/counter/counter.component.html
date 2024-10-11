@@ -1,0 +1,10 @@
+<div class="counter-container">
+  <!-- Display the current value of the counter by calling the count signal -->
+  <h1 class="counter-value">Counter: {{ count() }}</h1>
+  <div class="buttons">
+    <!-- Button to decrement the counter -->
+    <button (click)="decrement()" class="btn">-</button>
+    <!-- Button to increment the counter -->
+    <button (click)="increment()" class="btn">+</button>
+  </div>
+</div>
