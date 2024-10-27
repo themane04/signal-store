@@ -1,27 +1,39 @@
-# SignalStore
+# Angular Counter App with NgRx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+## Overview
+This project is a simple counter application built using Angular and NgRx. It demonstrates the basics of using signals in NgRx for state management within an Angular application. The counter allows users to increment and decrement a value, which is managed through a centralized state.
 
-## Development server
+## Project Structure
+- **app**:
+  - **components/counter**:
+    - `counter.component.html`: The HTML template displaying the counter.
+    - `counter.component.scss`: Styling for the counter component.
+    - `counter.component.ts`: Angular component handling the logic for incrementing and decrementing the counter.
+  - **store**:
+    - `counter.store.ts`: Contains the NgRx store logic for the counter, using signals to manage state changes.
+  - `app.component.html`: Main application template.
+  - `app.component.scss`: Main application styling.
+  - `app.component.ts`: Root component for the application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- Increment and decrement counter.
+- Uses NgRx signals for state management to keep track of the counter's value.
 
-## Code scaffolding
+## Setup
+To run this project, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Ensure you have [Node.js](https://nodejs.org/) and the [Angular CLI](https://angular.io/cli) installed.
+2. Clone the repository
+```
+git clone git@github.com:themane04/signal-store.git
+```
+3. Navigate to the project directory
+4. Install dependencies
+```
+npm install
+```
+5. Start the development server
+```
+ng serve
+```
+6. Open a web browser and navigate to `http://localhost:4200/` to view the app.
